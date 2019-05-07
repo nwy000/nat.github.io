@@ -150,7 +150,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/nat.github.io/2019/04/28/makedown语法测试/">makedown语法测试</a>
+      <a class="article-title" href="/nat.github.io/2019/04/28/makedown语法测试/">markdown语法测试</a>
     </h1>
   
 
@@ -166,7 +166,7 @@
       <span class="post-meta-item-icon">
         <i class="fa fa-keyboard-o"></i>
         <span class="post-meta-item-text">  字数统计: </span>
-        <span class="post-count">27字</span>
+        <span class="post-count">157字</span>
       </span>
     </span>
 
@@ -186,8 +186,47 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h3 id="makedown语法测试"><a href="#makedown语法测试" class="headerlink" title="makedown语法测试"></a>makedown语法测试</h3><p><code>cout &lt;&lt; &quot;hello world&quot;</code></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">fun()&#123;</span><br><span class="line">   cout &lt;&lt; &quot;this is a test demo&quot; &lt;&lt; endl;</span><br><span class="line">   &#125;</span><br></pre></td></tr></table></figure>
+        <h2 id="markdown语法"><a href="#markdown语法" class="headerlink" title="markdown语法"></a>markdown语法</h2><h3 id="标题标记用法"><a href="#标题标记用法" class="headerlink" title="标题标记用法"></a>标题标记用法</h3><h4 id="用法1"><a href="#用法1" class="headerlink" title="用法1"></a>用法1</h4><p>markdown语法支持6级标题，使用方法是在文字前加#号，需要注意的是#号与文字之间要有空格。</p>
+<pre><code># h1
+## h2
+### h3
+#### h4
+##### h5
+###### h6
+####### h7无效
+</code></pre><p>具体效果：</p>
+<h1 id="h1"><a href="#h1" class="headerlink" title="h1"></a>h1</h1><h2 id="h2"><a href="#h2" class="headerlink" title="h2"></a>h2</h2><h3 id="h3"><a href="#h3" class="headerlink" title="h3"></a>h3</h3><h4 id="h4"><a href="#h4" class="headerlink" title="h4"></a>h4</h4><h5 id="h5"><a href="#h5" class="headerlink" title="h5"></a>h5</h5><h6 id="h6"><a href="#h6" class="headerlink" title="h6"></a>h6</h6><p>####### h7无效</p>
+<h4 id="用法2"><a href="#用法2" class="headerlink" title="用法2"></a>用法2</h4><pre><code>h1
+==
+
+h2
+--
+</code></pre><p>具体效果：</p>
+<h1 id="h1-1"><a href="#h1-1" class="headerlink" title="h1"></a>h1</h1><h2 id="h2-1"><a href="#h2-1" class="headerlink" title="h2"></a>h2</h2><h3 id="引用标记用法"><a href="#引用标记用法" class="headerlink" title="引用标记用法"></a>引用标记用法</h3><pre><code>&gt; 引用1
+&gt;&gt; 引用2
+</code></pre><p>具体效果：</p>
+<blockquote>
+<p>引用1</p>
+<blockquote>
+<p>引用2</p>
+</blockquote>
+</blockquote>
+<h3 id="代码块标记用法"><a href="#代码块标记用法" class="headerlink" title="代码块标记用法"></a>代码块标记用法</h3><h4 id="用法1-1"><a href="#用法1-1" class="headerlink" title="用法1"></a>用法1</h4><pre><code>`代码行`
+</code></pre><hr>
+   <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">```代码块```</span><br></pre></td></tr></table></figure>
+<p>具体效果：</p>
+<p><code>cout &lt;&lt; &quot;hello world&quot;</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">fun()&#123;</span><br><span class="line">cout &lt;&lt; &quot;this is a test demo&quot; &lt;&lt; endl;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+<h4 id="用法2-1"><a href="#用法2-1" class="headerlink" title="用法2"></a>用法2</h4><pre><code>（tab键）nat 
+（tab键）fun(){
+nat
+}
+</code></pre><p>具体效果：</p>
+<pre><code>nat
+fun(){
+nat
+}
+</code></pre>
       
 
       
@@ -459,11 +498,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">life</a>
+                <a href="javascript:void(0)" class="js-tag color4">markdown</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">markdown</a>
+                <a href="javascript:void(0)" class="js-tag color5">life</a>
               </li>
             
             <div class="clearfix"></div>
