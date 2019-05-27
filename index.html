@@ -149,6 +149,122 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-ros安装" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/nat.github.io/2019/05/27/ros安装/">ros安装</a>
+    </h1>
+  
+
+        
+        
+<a href="/nat.github.io/2019/05/27/ros安装/" class="archive-article-date">
+  	<time datetime="2019-05-27T12:59:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-05-27</time>
+</a>
+		<!-- 需要添加的位置 -->
+        <!-- 开始添加字数统计-->
+        
+          <div style="margin-top:10px;">
+    <span class="post-time">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-keyboard-o"></i>
+        <span class="post-meta-item-text">  字数统计: </span>
+        <span class="post-count">223字</span>
+      </span>
+    </span>
+
+    <span class="post-time">
+      &nbsp; | &nbsp;
+      <span class="post-meta-item-icon">
+        <i class="fa fa-hourglass-half"></i>
+        <span class="post-meta-item-text">  阅读时长: </span>
+        <span class="post-count">1分</span>
+      </span>
+    </span>
+</div>
+          
+        <!-- 添加完成 -->
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="ros安装方式（针对ros-kinetic-Ubuntu16-04）"><a href="#ros安装方式（针对ros-kinetic-Ubuntu16-04）" class="headerlink" title="ros安装方式（针对ros kinetic Ubuntu16.04）"></a>ros安装方式（针对ros kinetic Ubuntu16.04）</h3><h4 id="ros安装方式一，添加源"><a href="#ros安装方式一，添加源" class="headerlink" title="ros安装方式一，添加源"></a>ros安装方式一，添加源</h4><h5 id="1-添加sources-list"><a href="#1-添加sources-list" class="headerlink" title="1.添加sources.list"></a>1.添加sources.list</h5><figure class="highlight plain"><figcaption><span>sh -c '.</span><a href="/etc/lsb-release">&& echo "deb http://mirrors.ustc.edu.cn/ros/ubuntu/ $DISTRIB_CODENAME main" > /etc/apt/sources.list.d/ros-latest.list'```</a></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">将ros镜像添加到ubuntu源，建议使用国内源</span><br><span class="line">##### 2.添加公钥</span><br><span class="line">```sudo apt-key adv --keyserver hkp://ha.pool.sks-keyservers.net:80 --recv-key 421C365BD9FF1F717815A3895523BAEEB01FA116</span><br></pre></td></tr></table></figure>
+<p>公钥是安装ros不可少的一部分</p>
+<h5 id="3-系统更新"><a href="#3-系统更新" class="headerlink" title="3.系统更新"></a>3.系统更新</h5><figure class="highlight plain"><figcaption><span>apt-get update && sudo apt-get upgrade```</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">系统源更新</span><br><span class="line">##### 4.安装ros</span><br><span class="line">```sudo apt-get install ros-kinetic-desktop-full</span><br></pre></td></tr></table></figure>
+<h5 id="5-安装rosdep"><a href="#5-安装rosdep" class="headerlink" title="5.安装rosdep"></a>5.安装rosdep</h5><figure class="highlight plain"><figcaption><span>rosdep init && rosdep update```</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">##### 6.ROS环境配置</span><br><span class="line">```echo &quot;source /opt/ros/kinetic/setup.bash&quot; &gt;&gt; ~/.bashrc</span><br></pre></td></tr></table></figure>
+<h5 id="7-安装rosinstall"><a href="#7-安装rosinstall" class="headerlink" title="7.安装rosinstall"></a>7.安装rosinstall</h5><figure class="highlight plain"><figcaption><span>apt-get install python-rosinstall```</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">##### 8.测试是否安装好ros</span><br><span class="line">```roscore</span><br></pre></td></tr></table></figure>
+<p>如果出现如下界面，则表示安装完毕，enjoy it！</p>
+<h4 id="ros安装方式二，一键命令"><a href="#ros安装方式二，一键命令" class="headerlink" title="ros安装方式二，一键命令"></a>ros安装方式二，一键命令</h4><p>一键命令安装<br><figure class="highlight plain"><figcaption><span>https://raw.githubusercontent.com/oroca/oroca-ros-pkg/master/ros_install.sh && \</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">chmod 755 ./ros_install.sh &amp;&amp; bash ./ros_install.sh catkin_ws kinetic</span><br></pre></td></tr></table></figure></p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">ros</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/nat.github.io/categories/ros//" class="article-tag-list-link color4">ros</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/nat.github.io/2019/05/27/ros安装/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+
+  
     <article id="post-重新拾起编程基础" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -600,6 +716,10 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">markdown</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">ros</a>
               </li>
              
               <li class="article-tag-list-item">
