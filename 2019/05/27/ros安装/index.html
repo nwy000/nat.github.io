@@ -17,7 +17,7 @@
 <meta property="og:description" content="ros安装方式（针对ros kinetic Ubuntu16.04）ros安装方式一，添加源1.添加sources.listsudo sh -c &amp;apos;. /etc/lsb-release &amp;amp;&amp;amp; echo &amp;quot;deb http://mirrors.ustc.edu.cn/ros/ubuntu/ $DISTRIB_CODENAME main&amp;quot; &amp;gt; /et">
 <meta property="og:locale" content="default">
 <meta property="og:image" content="https://raw.githubusercontent.com/nwy000/myblog_photo/master/ros.png">
-<meta property="og:updated_time" content="2019-05-29T08:16:22.825Z">
+<meta property="og:updated_time" content="2019-05-29T08:18:09.980Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="ros安装">
 <meta name="twitter:description" content="ros安装方式（针对ros kinetic Ubuntu16.04）ros安装方式一，添加源1.添加sources.listsudo sh -c &amp;apos;. /etc/lsb-release &amp;amp;&amp;amp; echo &amp;quot;deb http://mirrors.ustc.edu.cn/ros/ubuntu/ $DISTRIB_CODENAME main&amp;quot; &amp;gt; /et">
@@ -203,8 +203,7 @@
     <div class="article-entry" itemprop="articleBody">
       
         <h3 id="ros安装方式（针对ros-kinetic-Ubuntu16-04）"><a href="#ros安装方式（针对ros-kinetic-Ubuntu16-04）" class="headerlink" title="ros安装方式（针对ros kinetic Ubuntu16.04）"></a>ros安装方式（针对ros kinetic Ubuntu16.04）</h3><h4 id="ros安装方式一，添加源"><a href="#ros安装方式一，添加源" class="headerlink" title="ros安装方式一，添加源"></a>ros安装方式一，添加源</h4><h5 id="1-添加sources-list"><a href="#1-添加sources-list" class="headerlink" title="1.添加sources.list"></a>1.添加sources.list</h5><pre><code>sudo sh -c &apos;. /etc/lsb-release &amp;&amp; echo &quot;deb http://mirrors.ustc.edu.cn/ros/ubuntu/ $DISTRIB_CODENAME main&quot; &gt; /etc/apt/sources.list.d/ros-latest.list&apos;
-</code></pre><a id="more"></a>
-<p>将ros镜像添加到ubuntu源，建议使用国内源</p>
+</code></pre><p>将ros镜像添加到ubuntu源，建议使用国内源<a id="more"></a></p>
 <h5 id="2-添加公钥"><a href="#2-添加公钥" class="headerlink" title="2.添加公钥"></a>2.添加公钥</h5><pre><code>sudo apt-key adv --keyserver hkp://ha.pool.sks-keyservers.net:80 --recv-key 421C365BD9FF1F717815A3895523BAEEB01FA116
 </code></pre><p>公钥是安装ros不可少的一部分</p>
 <h5 id="3-系统更新"><a href="#3-系统更新" class="headerlink" title="3.系统更新"></a>3.系统更新</h5><pre><code>sudo apt-get update &amp;&amp; sudo apt-get upgrade
